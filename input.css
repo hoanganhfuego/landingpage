@@ -5,3 +5,20 @@
 .header{
     background: linear-gradient(90deg, #FFFCE6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
 }
+
+.bg-blur{
+    background: linear-gradient(180deg, rgba(1, 22, 39, 0) 40.63%, #011627 100%);
+}
+
+.footer{
+    background: linear-gradient(90deg, rgba(255, 230, 230, 0.52) 0%, rgba(245, 255, 254, 0.52) 26.81%, rgba(252, 243, 255, 0.52) 54.58%, rgba(255, 244, 230, 0.52) 99.86%);
+}
+
+.hover-red-line:hover:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    border-bottom: solid 2px #E71D36;
+}
