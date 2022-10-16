@@ -571,3 +571,9 @@ video {
   bottom: -8px;
   border-bottom: solid 2px #E71D36;
 }
+
+@media only screen and (max-width: 1800px){
+  .layout{
+    background-color: black;
+  }
+}
