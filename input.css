@@ -14,11 +14,64 @@
     background: linear-gradient(90deg, rgba(255, 230, 230, 0.52) 0%, rgba(245, 255, 254, 0.52) 26.81%, rgba(252, 243, 255, 0.52) 54.58%, rgba(255, 244, 230, 0.52) 99.86%);
 }
 
-.hover-red-line:hover:after{
+.hover-red-line:after{
+    content: '';
+    position: absolute;
+    left: -200px;
+    width: 100px;
+    bottom: 0px;
+    border-bottom: solid 2px #E71D36;
+    transition: 0.5s;
+}
+
+.hover-red-line:hover::after{
+    left: 0px;
+}
+
+.hover-red-line-2:hover:after{
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -8px;
+    bottom: -2px;
     border-bottom: solid 2px #E71D36;
+    transition: 0.5s;
+}
+
+.aside{
+    transition: 0.6s;
+}
+
+.aside-bg{
+    background-color: rgb(0, 0, 0, 0.8);
+    /* transition: 0s; */
+}
+
+.header-navbar{
+    transition: 1s;
+}
+
+.sticky-navbar{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    z-index: 10000;
+    transition: 0.8s;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.sticky-navbar p{
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.sticky-navbar i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sticky-navbar div{
+    transition: 0.4s;
+    height: 60px;
 }
