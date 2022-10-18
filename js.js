@@ -24,3 +24,16 @@ function handleAsideSliceOut(){
 window.onscroll = handleScoll
 bar.addEventListener('click', handleAsideSliceIn)
 asideBg.addEventListener('click', handleAsideSliceOut)
+
+$(document).ready(function(){
+    console.log($('.autoplay'))
+    $('.autoplay').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '60px',
+    });
+});
