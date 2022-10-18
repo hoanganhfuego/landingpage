@@ -629,3 +629,17 @@ video {
   height: 60px;
   width: 83%;
 }
+
+.red{
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.06));
+  border: 1px solid transparent;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF) padding-box,
+    linear-gradient(180deg, rgba(231, 29, 54, 0.6) 0%, rgba(231, 29, 54, 0) 100%) border-box;
+}
+
+.green{
+  filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.06));
+  border: 1px solid transparent;
+  background: linear-gradient(0deg, #F7FFFE, #F7FFFE) padding-box,
+    linear-gradient(180deg, rgba(46, 196, 182, 0.6) 0%, rgba(46, 196, 182, 0) 100%) border-box;
+}
