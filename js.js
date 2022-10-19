@@ -31,13 +31,38 @@ asideBg.addEventListener('click', handleAsideSliceOut)
 
 $(document).ready(function(){
     $('.autoplay').slick({
-        slidesToShow: 1,
+        slidesToShow: 4,
+        infinite: true,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
         arrows: false,
-        centerMode: true,
-        centerPadding: '60px',
+        // centerMode: true,
+        // centerPadding: '60px',
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                centerMode: true,
+                slidesToShow: 1
+              }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    infinite: true,
+                  centerMode: true,
+                  slidesToShow: 1
+                }
+              }
+          ]
     });
 });
 
