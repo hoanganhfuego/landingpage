@@ -604,15 +604,10 @@ html {
   /* transition: 0s; */
 }
 
-.header-navbar{
-  transition: 1s;
-}
-
 .sticky-navbar{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-color: white;
   z-index: 10000;
-  transition: 0.8s;
   position: fixed;
   top: 0;
   right: 0;
@@ -631,7 +626,7 @@ html {
 .sticky-navbar div{
   transition: 0.4s;
   height: 60px;
-  width: 90%;
+  width: 79%;
 }
 
 .red{
@@ -660,4 +655,9 @@ html {
   border: 2px solid transparent;
   background: linear-gradient(0deg, #F7FFFE, #F7FFFE) padding-box,
     linear-gradient(-90deg, rgba(46, 196, 182, 0.6) 0%, rgba(46, 196, 182, 0) 100%) border-box;
+}
+
+.dark-header{
+  background-color: #000000 !important;
+  background-image:linear-gradient(right, #434343, #000000);
 }

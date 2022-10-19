@@ -1,13 +1,17 @@
 const aside = document.querySelectorAll('.aside')[0]
 const bar = document.querySelectorAll('.bar')[0]
 const asideBg = document.querySelectorAll('.aside-bg')[0]
-const header = document.querySelectorAll('.header-navbar')[0]
+const headerNavbar = document.querySelectorAll('.header-navbar')[0]
+const header = document.querySelectorAll('.header')[0]
+const light = document.querySelector('#light')
+const dark = document.querySelector('#dark')
+const windowWidth = window.innerWidth
 
 function handleScoll(){
-    if (window.pageYOffset >= header.offsetTop + 50) {
-        header.classList.add("sticky-navbar")
+    if (window.pageYOffset >= headerNavbar.offsetTop + 50) {
+        headerNavbar.classList.add("sticky-navbar")
     } else {
-        header.classList.remove("sticky-navbar");
+        headerNavbar.classList.remove("sticky-navbar");
     }
 }
 
@@ -26,7 +30,6 @@ bar.addEventListener('click', handleAsideSliceIn)
 asideBg.addEventListener('click', handleAsideSliceOut)
 
 $(document).ready(function(){
-    console.log($('.autoplay'))
     $('.autoplay').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -37,3 +40,10 @@ $(document).ready(function(){
         centerPadding: '60px',
     });
 });
+
+function handleDarkMode(){
+    console.log('xin chao')
+    header.setAttribute('style', 'background-image: linear-gradient(to right, #434343, #000000);')
+}
+
+dark.addEventListener('click', handleDarkMode)
